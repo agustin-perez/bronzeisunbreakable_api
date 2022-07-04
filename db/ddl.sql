@@ -56,7 +56,7 @@
 		idh MEDIUMINT NOT NULL,
 		url varchar(255),	
 		PRIMARY KEY (id, idh),
-		CONSTRAINT fk_media_home_entry FOREIGN KEY (idh) REFERENCES changelog_entry (id)
+		CONSTRAINT fk_media_home_entry FOREIGN KEY (idh) REFERENCES home_entry (id)
 	) ENGINE = InnoDB DEFAULT CHARSET = UTF8; 
 
     /* End table creation */

@@ -1,21 +1,21 @@
-package com.bronzeisunbreakable.api.model.pages;
+package com.bronzeisunbreakable.api.model.pages.home;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Home {
+public class HomePage {
     @Id
     private long id;
     private String maintitle;
     private String subtitle;
     private String body;
 
-    public Home(){
+    public HomePage(){
 
     }
 
-    public Home(long id, String maintitle, String subtitle, String body) {
+    public HomePage(long id, String maintitle, String subtitle, String body) {
        this.id = id;
        this.maintitle = maintitle;
        this.subtitle = subtitle;

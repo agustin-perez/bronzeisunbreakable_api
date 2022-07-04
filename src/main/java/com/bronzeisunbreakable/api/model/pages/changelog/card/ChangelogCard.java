@@ -1,21 +1,21 @@
-package com.bronzeisunbreakable.api.model.pages;
+package com.bronzeisunbreakable.api.model.pages.changelog.card;
 
 import javax.persistence.*;
 import java.lang.String;
 
 @Entity
-public class Changelog {
+public class ChangelogCard {
     @Id
     private long id;
     private String title;
     private String body;
     private int severity;
 
-    public Changelog() {
+    public ChangelogCard() {
 
     }
 
-    public Changelog(long id, String title, String body, int severity) {
+    public ChangelogCard(long id, String title, String body, int severity) {
         this.id = id;
         this.title = title;
         this.body = body;
